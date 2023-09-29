@@ -12,13 +12,13 @@ async function main_processing() {
 		target = process.argv[2]
 		threads = process.argv[3]
 		
-		const proxyscrape_http = await axios.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=https&timeout=10000&country=all&ssl=all&anonymity=all');
-		var proxies = proxyscrape_http.data;
-		fs.writeFile('proxies.txt', proxies, (err) => {
-			if (err) {
-				undefined;
-			}
-		});
+		// const proxyscrape_http = await axios.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=https&timeout=10000&country=all&ssl=all&anonymity=all');
+		// var proxies = proxyscrape_http.data;
+		// fs.writeFile('proxies.txt', proxies, (err) => {
+			// if (err) {
+				// return
+			// }
+		// });
 		var fileProxies = fs.readFileSync('proxies.txt', 'utf-8');
 		
 		function run() {
