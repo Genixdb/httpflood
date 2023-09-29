@@ -60,4 +60,4 @@ async function main_processing() {
 	}
 }
 
-main_process();
+main_processing();
