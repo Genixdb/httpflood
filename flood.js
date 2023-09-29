@@ -60,8 +60,5 @@ async function main_processing() {
 	}
 }
 
-process.on('uncaughtException', function (err) {
-});
-process.on('unhandledRejection', function (err) {
-});
+
 main_processing();
