@@ -16,8 +16,7 @@ async function main_processing() {
 		var proxies = proxyscrape_http.data;
 		fs.writeFile('proxies.txt', proxies, (err) => {
 			if (err) {
-				console.error(err);
-				return
+				undefined;
 			}
 		});
 		var fileProxies = fs.readFileSync('proxies.txt', 'utf-8');
